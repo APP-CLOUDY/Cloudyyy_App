@@ -15,23 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-m7-a5P">
-                                <rect key="frame" x="149" y="212" width="113" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Child Home"/>
-                                <connections>
-                                    <action selector="goToChildHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ur-n2-rHC"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rlD-m7-a5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="7aE-SC-683"/>
-                            <constraint firstItem="rlD-m7-a5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="153" id="Q2Q-8i-2Pu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rlD-m7-a5P" secondAttribute="trailing" constant="131" id="V7x-CU-A2h"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
