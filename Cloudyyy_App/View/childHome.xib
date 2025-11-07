@@ -98,6 +98,7 @@
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.94901960784313721" green="0.8901960784313725" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstItem="DYT-jI-SnM" firstAttribute="centerX" secondItem="qSk-kg-riv" secondAttribute="centerX" id="6Wd-Dy-xKp"/>
                                         <constraint firstItem="DYT-jI-SnM" firstAttribute="centerY" secondItem="qSk-kg-riv" secondAttribute="centerY" id="7dE-rV-3QZ"/>
@@ -110,7 +111,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCloudMain" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-fh-fhc">
+                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCloudMain" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-fh-fhc">
                                     <rect key="frame" x="38" y="4" width="300" height="260"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="260" id="rPs-im-mLp"/>
@@ -190,11 +191,15 @@
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="8E1-ba-0rZ" firstAttribute="leading" secondItem="ap5-jp-Br6" secondAttribute="leading" constant="20" id="47s-oy-iZi"/>
                                 <constraint firstAttribute="bottom" secondItem="8E1-ba-0rZ" secondAttribute="bottom" id="9QT-78-EMT"/>
                                 <constraint firstAttribute="trailing" secondItem="8E1-ba-0rZ" secondAttribute="trailing" constant="20" symbolic="YES" id="odF-xH-aKv"/>
                             </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="PKt-8U-E23" appends="YES" id="bn1-dA-UOv"/>
+                            </connections>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your achievements " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef2-zy-Mum" userLabel="Your achievements">
                             <rect key="frame" x="28" y="628" width="296" height="24"/>
@@ -285,6 +290,11 @@
             </constraints>
             <point key="canvasLocation" x="-878.62595419847321" y="-128.87323943661971"/>
         </view>
+        <tapGestureRecognizer id="PKt-8U-E23">
+            <connections>
+                <action selector="mascotTapped:" destination="-1" id="Ysn-hr-HJH"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="bell.badge" catalog="system" width="117" height="128"/>

@@ -42,6 +42,19 @@ class childHome: UIViewController {
     @IBOutlet weak var lblHabit: UILabel!
     
     @IBOutlet weak var habitprogressView: UIProgressView!
+   
+    @IBAction func mascotTapped(_ sender: UITapGestureRecognizer) {
+        // This code runs when the cloud is tapped
+            print("Mascot was tapped!")
+            
+            // 1. Use the correct class name: "chatBot"
+            // 2. Use the correct NIB name: "chatBot" (with a lowercase 'c')
+            let chatBotVC = chatBot(nibName: "chatBot", bundle: nil)
+            
+            // 2. Present the new screen
+            self.present(chatBotVC, animated: true)
+        }
+    
     
     
 
